@@ -1,0 +1,49 @@
+# Unity binary files - NEVER modify line endings
+*.unity binary
+*.prefab binary
+*.asset binary
+*.mat binary
+*.controller binary
+*.anim binary
+*.fbx binary
+*.blend binary
+*.meta binary
+*.spriteatlas binary
+*.guiskin binary
+*.fontsettings binary
+*.physicmaterial binary
+*.physicsmaterial2d binary
+
+# Text files - use LF for cross-platform compatibility
+*.cs text eol=lf
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.xml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+
+# Force binary for Unity cache folders
+/[Ll]ibrary/ binary
+/[Tt]emp/ binary
+/[Oo]bj/ binary
+/[Bb]uild/ binary
+/[Bb]uilds/ binary
+/[Ll]ogs/ binary
+/[Uu]ser[Ss]ettings/ binary
+/[Mm]emoryCaptures/ binary
+
+# Visual Studio
+.vs/ binary
+*.csproj binary
+*.sln binary
+*.suo binary
+*.user binary
+*.userprefs binary
+
+# Keep your existing LFS rules
+Assets/Plugins/iOS/Appodeal.framework/Appodeal filter=lfs diff=lfs merge=lfs -text
+Assets/Firebase/Plugins/x86_64/FirebaseCppApp-8_7_0.so filter=lfs diff=lfs merge=lfs -text
